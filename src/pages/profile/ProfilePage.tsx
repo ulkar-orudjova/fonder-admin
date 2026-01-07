@@ -31,7 +31,7 @@ export const ProfilePage = () => {
               <div className="profile-avatar-section">
                 {user?.profileImage ? (
                   <img 
-                    src={`${imageUrl}/${user.profileImage}`}
+                    src={user.profileImage}
                     alt={user.name}
                     className="profile-avatar"
                   />

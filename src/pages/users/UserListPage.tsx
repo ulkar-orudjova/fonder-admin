@@ -96,7 +96,7 @@ export const UserListPage = () => {
                   <div className="user-avatar-wrapper">
                     {user.profileImage ? (
                       <img 
-                        src={`${imageUrl}/${user.profileImage}`}
+                        src={user.profileImage}
                         alt={user.name}
                         className="user-avatar"
                       />

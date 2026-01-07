@@ -20,7 +20,7 @@ export const Header = ({ title }: HeaderProps) => {
         </div>
         {user?.profileImage ? (
           <img 
-            src={`${imageUrl}/${user.profileImage}`} 
+            src={user.profileImage} 
             alt={user.name} 
             className="w-8 h-8 rounded-full object-cover"
           />

@@ -69,7 +69,7 @@ export const SettingsPage = () => {
               <div className="settings-avatar-wrapper">
                 {user?.profileImage ? (
                   <img 
-                    src={`${imageUrl}/${user.profileImage}`}
+                    src={user.profileImage}
                     alt={user.name}
                     className="settings-avatar"
                   />

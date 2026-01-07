@@ -161,7 +161,7 @@ export const ProductsPage = () => {
                 <div className="product-image-wrapper">
                   {product.productImage ? (
                     <img 
-                      src={`${imageUrl}/${product.productImage}`}
+                      src={product.productImage}
                       alt={product.name}
                       className="product-image"
                     />
