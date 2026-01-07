@@ -18,7 +18,6 @@ export const ProductsPage = () => {
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const imageUrl = import.meta.env.VITE_IMAGE_URL;
 
   const fetchProducts = async () => {
     setLoading(true);

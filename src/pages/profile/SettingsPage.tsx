@@ -17,7 +17,6 @@ export const SettingsPage = () => {
     age: user?.age || '',
   });
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const imageUrl = import.meta.env.VITE_IMAGE_URL;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

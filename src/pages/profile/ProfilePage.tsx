@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 export const ProfilePage = () => {
   const { user } = useAuth();
   const { t, i18n } = useTranslation();
-  const imageUrl = import.meta.env.VITE_IMAGE_URL;
 
   const getStatusText = () => {
     return user?.isActive ? t('profile.status.active') : t('profile.status.inactive');

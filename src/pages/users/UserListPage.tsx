@@ -11,7 +11,6 @@ export const UserListPage = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
-  const imageUrl = import.meta.env.VITE_IMAGE_URL;
   const { t } = useTranslation();
   
   const fetchUsers = async () => {

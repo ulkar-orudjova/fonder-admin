@@ -7,7 +7,6 @@ interface HeaderProps {
 
 export const Header = ({ title }: HeaderProps) => {
   const { user } = useAuth();
-  const imageUrl = import.meta.env.VITE_IMAGE_URL;
 
   return (
     <header className="header">
